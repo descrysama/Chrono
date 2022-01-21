@@ -1,0 +1,45 @@
+h1{
+    text-align: center;
+    color: blueviolet;
+}
+
+.chrono{
+  margin: auto ;
+  width: 450px;
+  text-align: center;
+  
+}
+
+.time{
+    margin: auto;
+    width: 450px;
+    border: 1px dotted blueviolet;
+    padding:7px 0;
+    text-align: center;
+    font-size: 1.7em;
+    margin-bottom: 15px;
+    color: grey;
+
+
+}
+
+button{
+  background: rgb(219, 219, 219);
+  color: rgb(0, 0, 0);
+  width: 165px;
+  border-radius: 5px;
+  line-height: 1.5em;
+  border: 1px blueviolet solid;
+  margin: 3px;
+}
+
+
+#start:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
+
+#stop:disabled {
+  background-color: gray;
+  cursor: not-allowed;
+}
