@@ -49,6 +49,13 @@ function reset() {
     stopwatch = false;
 }
 
+function loop() {
+    chronoclass = document.querySelector('.chrono');
+    el = document.createElement('li');
+    el.textContent = hours+ ":" + min + ":" + sec + ":" + ms;
+    chronoclass.appendChild(el)
+}
+
 
 
 function cycle() {
