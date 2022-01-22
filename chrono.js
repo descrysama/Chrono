@@ -79,4 +79,7 @@ function cycle() {
     htmlmin.innerHTML = min + " min"
     htmlsec.innerHTML = sec + " s";
     htmlms.innerHTML = ms + " ms";
+    if (ms < 10) {
+        htmlms.innerHTML = ms + "0 ms";
+    }
 }
