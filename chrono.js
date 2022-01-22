@@ -35,6 +35,10 @@ function stop() {
 }
 
 function reset() {
+    sec = 0;
+    min = 0;
+    hours = 0;
+    ms = 0;    
     clearInterval(time)
     htmlhour.innerHTML = hours + " h"
     htmlmin.innerHTML = min + " min"
