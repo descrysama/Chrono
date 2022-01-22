@@ -11,10 +11,21 @@ let stopwatch = false;
 
 
 function start() {
-    time = setInterval(cycle,10);
-    document.getElementById('start').disabled = true;
-    document.getElementById('stop').disabled = false;
-    stopwatch = true;
+    if (stopwatch == false) {
+        sec = 0;
+        min = 0;
+        hours = 0;
+        ms = 0;
+        time = setInterval(cycle,10);
+        document.getElementById('start').disabled = true;
+        document.getElementById('stop').disabled = false;
+        stopwatch = true;
+    } else {
+        time = setInterval(cycle,10);
+        document.getElementById('start').disabled = true;
+        document.getElementById('stop').disabled = false;
+        stopwatch = true;
+    }
 }
 
 function stop() {
@@ -25,16 +36,13 @@ function stop() {
 
 function reset() {
     clearInterval(time)
-    sec = 0;
-    min = 0;
-    hours = 0;
-    ms = 0;
     htmlhour.innerHTML = hours + " h"
     htmlmin.innerHTML = min + " min"
     htmlsec.innerHTML = sec + " s";
     htmlms.innerHTML = ms + " ms";
     document.getElementById('stop').disabled = false;
     document.getElementById('start').disabled = false;
+    stopwatch = false;
 }
 
 
