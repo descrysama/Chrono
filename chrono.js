@@ -25,10 +25,10 @@ function stop() {
 
 function reset() {
     clearInterval(time)
-    let sec = 0;
-    let min = 0;
-    let hours = 0;
-    let ms = 0;
+    sec = 0;
+    min = 0;
+    hours = 0;
+    ms = 0;
     htmlhour.innerHTML = hours + " h"
     htmlmin.innerHTML = min + " min"
     htmlsec.innerHTML = sec + " s";
